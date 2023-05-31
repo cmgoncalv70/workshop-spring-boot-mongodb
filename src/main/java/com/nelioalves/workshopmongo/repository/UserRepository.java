@@ -7,6 +7,6 @@ import com.nelioalves.workshopmongo.domain.User;
 
 @Repository
 //parametros: tipo da classe de dominio e tipo do ID da classe
-public interface UserRepository extends MongoRepository<User, String>{
+public interface UserRepository extends MongoRepository<User, String> {
 
 }

@@ -26,11 +26,15 @@ public class UserService {
 			throw new ObjectNotFoundException("Objeto não encontrado");
 		}
 		return user;
-	
 	}
 	
 	public User insert(User obj) {
 		return repo.insert(obj);		
+	}
+	
+	public void delete(String id) {
+		findById(id);
+		repo.delete(id);
 	}
 	
 	public User fromDTO(UserDTO objDto) {		
